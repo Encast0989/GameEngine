@@ -73,6 +73,7 @@ Ex.
 public void createScoreboard(Player p) {
     GScoreboard scoreboard = new GScoreboard(GameEngine gameEngine, String displayName, boolean animate);
     scoreboard.addLine("Name: " + p.getName());
+    scoreboard.setScoreboard(p);
     
     new BukkitRunnable() {
         int c = 0;
