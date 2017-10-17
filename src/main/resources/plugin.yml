@@ -1,0 +1,5 @@
+name: GameEngine
+version: ${project.version}
+main: club.encast.gameengine.GEPlugin
+authors: [Encast]
+description: GameEngine for quick development of mini-games.
