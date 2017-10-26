@@ -31,5 +31,6 @@ public class SpectatorManager {
 
     public void openPlayerMenu() {
         //TODO: Finish code.
+        //FINSH THIS
     }
 }
