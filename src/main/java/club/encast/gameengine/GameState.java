@@ -32,6 +32,10 @@ public abstract class GameState {
         return timeLength;
     }
 
+    public void setDuration(long time, TimeUnit unit) {
+        this.timeLength = TimeUnit.SECONDS.convert(time, unit);
+    }
+
     public boolean isInfinite() {
         return infinite;
     }

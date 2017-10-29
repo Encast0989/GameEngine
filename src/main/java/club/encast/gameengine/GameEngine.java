@@ -97,8 +97,8 @@ public abstract class GameEngine {
         return gamePlayers;
     }
 
-    public final void setGamePlayer(UUID uuid) {
-        gamePlayers.add(uuid);
+    public final void setGamePlayer(Player player) {
+        if(player != null) gamePlayers.add(player.getUniqueId());
     }
 
     public final void removeGamePlayer(UUID uuid) {
@@ -110,7 +110,7 @@ public abstract class GameEngine {
     }
 
     public void setSpectator(Player player) {
-        spectators.add(player.getUniqueId());
+        if(player != null) spectators.add(player.getUniqueId());
     }
 
     public final void removeSpectator(Player player) {
